@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    overflow-x: hidden;
+    font-family: 'Orbitron', 'Courier New', monospace;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url('images/BG.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+header {
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.logo {
+    width: 100%;
+    height: auto;
+}
+
+.logo img {
+    width: 350px;
+    height: auto;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    padding: 0;
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 15px;
+}
+
+.social-icon {
+    color: #fff;
+    font-size: 38px;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
+
+.contact-email p {
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-family: 'Orbitron', 'Courier New', monospace;
+    text-shadow: 0 0 15px rgba(0, 255, 255, 0.7);
+}
+
+.copyright p {
+    font-size: 16px;
+    opacity: 1;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: 'Orbitron', 'Courier New', monospace;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .logo {
+        width: 140px;
+    }
+    
+    .logo img {
+        width: 140px;
+    }
+    
+    footer {
+        left: 30px;
+    }
+    
+    .social-icons {
+        gap: 25px;
+    }
+    
+    .social-icon {
+        font-size: 32px;
+    }
+    
+    .contact-email p {
+        font-size: 24px;
+    }
+    
+    .copyright p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 120px;
+    }
+    
+    .logo img {
+        width: 120px;
+    }
+    
+    footer {
+        left: 20px;
+    }
+    
+    .social-icons {
+        gap: 20px;
+    }
+    
+    .social-icon {
+        font-size: 28px;
+    }
+    
+    .contact-email p {
+        font-size: 20px;
+    }
+    
+    .copyright p {
+        font-size: 12px;
+    }
+} 
